@@ -1,0 +1,42 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* END OF RESET */
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.top-fixed{
+    height: 100px;
+    background-color: red;
+    float: left;
+    width: 90%;
+    position: fixed;
+    top: 0;
+    left: 10%;
+}
+.navbar{
+    height: calc(100vh - 100px);
+    width: 10%;
+    background-color: green;
+    float: left;
+}
+.main-content{
+    height: calc(100vh - 100px);
+    background-color: black;
+    float: left;
+    width: 90%;
+}
+.footer-nav{
+    height: 100px;
+    background-color: yellow;
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
