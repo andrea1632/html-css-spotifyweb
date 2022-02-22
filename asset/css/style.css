@@ -14,7 +14,6 @@
 .top-fixed{
     height: 100px;
     background-color: red;
-    float: left;
     width: 90%;
     position: fixed;
     top: 0;
@@ -24,12 +23,13 @@
     height: calc(100vh - 100px);
     width: 10%;
     background-color: green;
-    float: left;
+    position: fixed;
+    left: 0;
 }
 .main-content{
     height: calc(100vh - 100px);
     background-color: black;
-    float: left;
+    margin-left: 10%;
     width: 90%;
 }
 .footer-nav{
