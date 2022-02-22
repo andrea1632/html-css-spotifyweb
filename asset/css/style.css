@@ -86,7 +86,15 @@
 .link a{
     text-decoration: none;
     color: rgb(138, 136, 136);
-    font-size: 0.8em;
+    font-size: 0.7em;
+    margin: 0 5px;
+}
+.link a:nth-child(1) div{
+    margin: auto;
+    width: 50%;
+    background-color: #86C42C;
+    height: 2px;
+    margin-top: 2px;
 }
 .link{
     display: flex;
@@ -181,6 +189,20 @@
     height: 100%;
     background-color: #BEBEBE;
     border-radius: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.fa-circle{
+    color: white;
+    font-size: 14px;
+    display: none;
+}
+.bar2:hover .fa-circle{
+    display: block;
+}
+.bar2:hover{
+    background-color: #86C42C;
 }
 .media-player span{
     margin: 0 20px;
