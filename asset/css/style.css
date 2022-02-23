@@ -205,8 +205,9 @@
     font-size: 14px;
     display: none;
 }
-.bar2:hover .fa-circle{
+.bar1:hover .fa-circle{
     display: block;
+    cursor: grab;
 }
 .bar2:hover{
     background-color: #86C42C;
@@ -282,6 +283,29 @@
     width: 80%;
     margin: auto;
     display: none;
+}
+.overlay{
+  position: absolute;
+  font-size: 5em;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay i{
+    display: none;
+}
+.overlay:hover i{
+    display: block;
+    cursor: pointer;
+}
+.overlay:hover{
+    background-color: rgba(22, 22, 22, 0.4);
+}
+.img-content{
+    position: relative;
+    /* background-color: rgba(0, 0, 0, 0.096); */
 }
 /* TABLET QUERY */
 @media screen and (min-width: 720px){
