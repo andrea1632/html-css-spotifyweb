@@ -244,9 +244,25 @@
 .popular p{
     color:#7A7A7A;
 }
+.created-for{
+    margin-top: 100px;
+}
 .card h5{
     text-align: center;
     margin: 20px 0;
+}
+.volume{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.volume .bar1{
+    display: none;
+}
+.right-col,
+.mid-col,
+.left-col{
+    flex-basis: 33%;
 }
 /* TABLET QUERY */
 @media screen and (min-width: 720px){
@@ -305,5 +321,17 @@
     }
     .cards{
         justify-content: flex-start;
+    }
+    /* FOOTER NAV */
+    .volume .bar1{
+        display: block;
+    }
+    .volume{
+        flex-direction: column;
+        flex-basis: 90%;
+    }
+    .right-col{
+        margin-left: 100px;
+        margin-right: 10px;
     }
 }
