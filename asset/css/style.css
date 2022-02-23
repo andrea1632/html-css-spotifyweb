@@ -228,3 +228,67 @@
     justify-content: space-around;
     cursor: pointer;
 }
+#logo-big{
+    display: none;
+    color: white;
+}
+.ipad-q{
+    display: none;
+}
+.ipad-q .fa-plus{
+    font-size: 2em;
+    background-color: grey;
+    padding: 10px;
+    color: black;
+    margin-right: 10px;
+}
+/* TABLET QUERY */
+@media screen and (min-width: 720px){
+    /* NAVBAR */
+    .navbar ul li a img{
+        width: 50px;
+    }
+    .ipad-q{
+        display: block;
+    }
+    .navbar ul li{
+        display: flex;
+        align-items: center;
+        color: grey;
+    }
+    .navbar{
+        width: 25%;
+    }
+    .main-content{
+        width: 75%;
+        margin-left: 25%;
+    }
+    #logo-small{
+        display: none;
+    }
+    #logo-big{
+        display: block;
+    }
+    #logo-big a img{
+        width: 100%;
+    }
+    .navbar ul li{
+        padding: 10px;
+    }
+    #home{
+        border-left: 5px solid greenyellow;
+    }
+    .ipad-q.playlist{
+        margin-left: 10px;
+    }
+    .bottom-list li:last-child{
+        color: white;
+    }
+    .bottom-list li:last-child span{
+        margin: 0 10px;
+    }
+    .top-list h3{
+        color: white;
+    }
+    /* END OF NAVBAR */
+}
