@@ -76,10 +76,17 @@
     font-size: 0.9em;
     margin-right: 5px;
 }
+.upgrade:hover{
+    padding: 13px 29px;
+}
 /* NAVBAR LEFT */
 .navbar ul,
 .main-content ul{
     list-style: none;
+}
+.navbar ul li:hover{
+    color: white;
+    cursor: pointer;
 }
 .navbar ul li,
 .navbar ul li a{
@@ -102,6 +109,9 @@
     font-weight: 900;
     margin: 0 5px;
     padding: 10px 0 20px 0;
+}
+.link a:hover{
+    color: white;
 }
 .link a:nth-child(1) div{
     margin: auto;
@@ -175,6 +185,10 @@
 .player-text span{
     color: #7A7A7A;
 }
+.player-text span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .symbols{
     margin-left: 5px;
     color: #7A7A7A;
@@ -228,6 +242,7 @@
     margin: 0 ;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 .right-col{
     color: white;
@@ -305,7 +320,13 @@
 }
 .img-content{
     position: relative;
-    /* background-color: rgba(0, 0, 0, 0.096); */
+}
+.fa-heart:hover{
+    color: white;
+    cursor: pointer;
+}
+.mid-col .fa-play:hover{
+    font-size: 1.5em;
 }
 /* TABLET QUERY */
 @media screen and (min-width: 720px){
